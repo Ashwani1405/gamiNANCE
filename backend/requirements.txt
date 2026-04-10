@@ -6,3 +6,7 @@ psycopg2-binary
 redis
 groq
 python-dotenv
+xgboost>=2.0.3
+shap>=0.44.1
+scikit-learn>=1.4.0
+pandas>=2.2.0

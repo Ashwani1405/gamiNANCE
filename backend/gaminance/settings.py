@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'apps.users',
     'apps.gamification',
     'apps.assistant',
+    'apps.credit',
 ]
 
 MIDDLEWARE = [
