@@ -9,6 +9,7 @@ import BadgesPage from './pages/BadgesPage';
 import LeaderboardPage from './pages/LeaderboardPage';
 import CreditPage from './pages/CreditPage';
 import FraudPage from './pages/FraudPage';
+import AssistantPage from './pages/AssistantPage';
 import './App.css';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -70,6 +71,11 @@ function App() {
         <Route path="/fraud" element={
           <ProtectedRoute>
             <AppLayout><FraudPage /></AppLayout>
+          </ProtectedRoute>
+        } />
+        <Route path="/assistant" element={
+          <ProtectedRoute>
+            <AppLayout><AssistantPage /></AppLayout>
           </ProtectedRoute>
         } />
 
