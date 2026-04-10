@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../stores/authStore';
 import {
   LayoutDashboard, Trophy, ScrollText, Shield,
-  CreditCard, LogOut, Zap, Settings
+  CreditCard, LogOut, Zap, Settings, Sparkles
 } from 'lucide-react';
 
 const navItems = [
@@ -12,6 +12,7 @@ const navItems = [
   { path: '/leaderboard', icon: Trophy, label: 'Leaderboard' },
   { path: '/credit', icon: CreditCard, label: 'Credit DNA' },
   { path: '/fraud', icon: Shield, label: 'FraudShield' },
+  { path: '/assistant', icon: Sparkles, label: 'FinZen AI' },
 ];
 
 export default function Sidebar() {

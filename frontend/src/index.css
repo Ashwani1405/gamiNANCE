@@ -371,3 +371,42 @@ body {
 .stagger-3 { animation: slide-up 0.5s ease forwards; animation-delay: 0.3s; opacity: 0; }
 .stagger-4 { animation: slide-up 0.5s ease forwards; animation-delay: 0.4s; opacity: 0; }
 .stagger-5 { animation: slide-up 0.5s ease forwards; animation-delay: 0.5s; opacity: 0; }
+
+/* ===== FINZEN CHAT ===== */
+.chat-suggestion-chip {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-surface);
+  color: var(--color-text-secondary);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+.chat-suggestion-chip:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary-light);
+  background: rgba(108, 92, 231, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.2);
+}
+
+.chat-messages-area::-webkit-scrollbar {
+  width: 4px;
+}
+.chat-messages-area::-webkit-scrollbar-track {
+  background: transparent;
+}
+.chat-messages-area::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 2px;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.chat-spinner {
+  animation: spin 1s linear infinite;
+}
