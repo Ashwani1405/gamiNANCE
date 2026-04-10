@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnpm-debug.log*
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.venv
+env/
+instance/
+.pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build/Dist
+dist/
+build/
+.next/
+out/
+
+# Docker
+.docker_data/
+postgres_data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files
+*.log
+*.sqlite3
